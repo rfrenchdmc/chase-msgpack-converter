@@ -1,0 +1,20 @@
+version: "3"
+services:
+  mm2:
+    image: rfrenchdmc/mm2-msgpack
+#    build: ./docker
+#    image: bitnami/kafka
+    command: "/opt/bitnami/kafka/bin/connect-mirror-maker.sh /opt/mm2.properties"
+    #image: confluentinc/cp-kafka-connect
+    #command: "/kafka-run-class -name mirrorMaker org.apache.kafka.connect.mirror.MirrorMaker /opt/mm2.properties"
+#    environment: 
+#      KAFKA_LOG4J_OPTS: /etc/kafka/log4j.properties
+#    volumes:
+#      - "./docker/mm2.properties:/opt/mm2.properties"
+#      - "./docker/plugins:/opt/plugins"
+#      - "./docker/mm2.properties:/etc/mm2.properties"
+
+
+
+
+
